@@ -34,8 +34,10 @@ A comprehensive Python tool that automatically checks data quality issues in ANY
 
 
 # Import and use
-# Remove the downloaded file to avoid naming conflicts
-!rm data_quality_checker.py
+import sys
+sys.path.append('/content/')  # Add current directory to path
+
+from data_quality_checker import check_data_quality_enhanced
 
 # Check your data
-report = check_data_quality_enhanced('/content/sample_data/california_housing_test.csv')
+report = check_data_quality_enhanced('Your_data')
