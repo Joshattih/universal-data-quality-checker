@@ -30,7 +30,12 @@ A comprehensive Python tool that automatically checks data quality issues in ANY
 - Severity-based prioritization
 - Actionable insights
 
-## 📦 Installation
+## 📦 Import and use 
 
-```bash
-pip install pandas numpy matplotlib seaborn
+
+# Import and use
+# Remove the downloaded file to avoid naming conflicts
+!rm data_quality_checker.py
+
+# Check your data
+report = check_data_quality_enhanced('/content/sample_data/california_housing_test.csv')
